@@ -21,7 +21,9 @@ for repo in repo_list:
 	try:
 		dockerfile = urlopen(current_url).read().decode("utf-8")
 		results = re.findall(r'FROM.*\n',str(dockerfile))
-		outfile.write(results[0][5:-1])
+		for image in results:
+			outfile.write(results[0][5:-1])
+			outfile.write(",")
 		outfile.write("\n")
 		# outfile.write(results[5:-1])
 	except:

@@ -1,0 +1,98 @@
+NAME                           DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
+kbase/narrprereq               Narrative prerequisite base image (used by k…   1                                       [OK]
+kbase/rtmin                    KBase Runtime Image                             1                                       
+kbase/kb_njs_wrapper                                                           1                                       
+kbase/deplbase                 KBase Base Installation                         1                                       [OK]
+kbase/kb-sdk                                                                   1                                       
+kbase/narrative                KBase Narrative Image                           0                                       [OK]
+kbase/nginx                    KBase specific NGinx image                      0                                       [OK]
+kbase/docker-collectd          Image used for running a dockerized collectd…   0                                       [OK]
+kbase/kbase-ui                                                                 0                                       
+kbase/kb_jre                   Java 8 runtime environment for KBase apps. I…   0                                       [OK]
+kbase/kbase_base               KBase Base Image containing Core services an…   0                                       [OK]
+kbase/condor                   KBase specific HTCondor image, based on andy…   0                                       [OK]
+kbase/kbase                                                                    0                                       
+kbase/search_api               API wrapper around Elasticsearch.               0                                       
+kbase/sdkbase2                 Base image used in the kb_sdk repo (decouple…   0                                       [OK]
+kbase/handle_mngr              KBase Handle Manager service                    0                                       
+kbase/feeds                    KBase Feeds Service                             0                                       [OK]
+kbase/relation_engine_api      Relation Engine API service                     0                                       [OK]
+kbase/narrbase                 KBase Narrative Base Image                      0                                       [OK]
+kbaseui/kbase-ui-paydown       kbase-ui image dedicated to our effort to pa…   0                                       
+kbase/staging_service                                                          0                                       
+kbaseui/kbase-ui-proxy         A proxying server for kbase-ui and services …   0                                       
+kbase/narrative-traefiker      Tools to manage jupiter notebook lifecycle w…   0                                       
+kbase/kb_python                Image for KBase core services written in Pyt…   0                                       [OK]
+kbase/execution_engine2        execution_engine2                               0                                       
+kbase/kb_search                                                                0                                       
+kbase/narrative_version                                                        0                                       
+kbase/logstash                 Docker image for logstash service to capture…   0                                       [OK]
+kbase/cachingservice           File caching service for KBase                  0                                       [OK]
+kbase/narrative_method_store   Image for the KBase NMS, used to support Nar…   0                                       [OK]
+kbase/index_runner2                                                            0                                       
+kbase/groups                   groups                                          0                                       
+kbase/kb_auth2                                                                 0                                       
+kbase/user_profile             KBase core service that implements a user pr…   0                                       [OK]
+kbase/kb_workspace                                                             0                                       
+kbase/kb_shock                                                                 0                                       
+kbase/catalog                  Catalog Service - manages the "Apps" allowin…   0                                       [OK]
+kbase/db_initialize                                                            0                                       
+kbase/metrics                                                                  0                                       
+kbase/runtime                  KBase Runtime (Automated build)                 0                                       [OK]
+kbase/handle_service                                                           0                                       
+kbase/njs_wrapper                                                              0                                       
+kbase/errorlogging                                                             0                                       
+kbase/condor-worker            KBase Condor Worker image for cluster nodes     0                                       [OK]
+kbase/workspace_deluxe                                                         0                                       
+kbase/kb_awe                                                                   0                                       
+kbase/ee2                                                                      0                                       
+kbase/assembly_homology                                                        0                                       
+kbase/sdkbase                                                                  0                                       
+kbase/kbaseappcatalogstatic                                                    0                                       
+kbaseui/kbase-ui                                                               0                                       
+kbase/ujs                                                                      0                                       
+kbase/indexrunner                                                              0                                       
+kbase/service_wizard           Automated service wizard build                  0                                       [OK]
+kbase/collectd-docker                                                          0                                       
+kbase/handle_service2          Handle service 2.x                              0                                       
+kbase/proto-ui                                                                 0                                       
+kbase/kb_minideb               Version of bitnami/minideb:jessie that inclu…   0                                       
+kbase/kb_ballgown_base                                                         0                                       
+kbase/kb_perl                                                                  0                                       
+kbase/id_mapper                                                                0                                       
+kbase/narrative_service        Docker hub built narrative service image        0                                       
+kbase/blobstore                                                                0                                       
+kbase/ui-assets                                                                0                                       
+kbase/gene_homology                                                            0                                       
+kbase/kb_go                    Smallish repo for building/running Go 1.5.4 …   0                                       
+kbase/authtest                                                                 0                                       
+kbase/react_ui                                                                 0                                       
+jjeffryes/kbasepythonsdk                                                       0                                       
+i2cmx/kbase                                                                    0                                       
+kbase/applist                  Static catalog app list                         0                                       
+kbase/condor_flask                                                             0                                       
+sentha/kbase                                                                   0                                       
+slebras/kbase-cmash                                                            0                                       
+kbase/filebeat                                                                 0                                       
+kbase/dataimportexport                                                         0                                       
+slebras/kbase                  temporary place for testing kbase images        0                                       
+kenneth5831/kbase              ujj                                             0                                       
+kbase/ui-backend                                                               0                                       
+kbase/narrativereaper          Narrative reaper                                0                                       
+kbase/narrative_spawner                                                        0                                       
+kbase/data_import_export       DIE repo                                        0                                       
+kbase/traefik_authsvc                                                          0                                       
+tiramisu24/kbase                                                               0                                       
+sychan/kbase_sdkbase2          Holding area for images from kbase/kbase:sdk…   0                                       
+kbase/runtester                                                                0                                       
+arnoldzhao/kbase-psrt                                                          0                                       
+sychan/kbase_sdkbase                                                           0                                       
+kbase/kb_sdk                                                                   0                                       
+ialarmedalien/kbase                                                            0                                       
+scanon/narrative               KBase Narrative Image                           0                                       [OK]
+kbase/kbasepythonsdk           Base image for KBase SDK apps written in Pyt…   0                                       [OK]
+taniahisx2/kerberos            dockers de kerberos (kserver, kclient, kpam,…   0                                       
+dolson/challenge6              This contains an interview excercise for the…   0                                       
+kbase24/website                This is a main website of kbas24.com  and wi…   0                                       
+kbase/search_api_deluxe        search_api_deluxe                               0                                       
+zahmeeth/zs_kbase_v1           Test Run on KBase APP                           0                                       

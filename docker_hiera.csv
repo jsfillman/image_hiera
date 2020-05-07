@@ -2,54 +2,54 @@ Name,Parent
 kbase/applist,
 kbase/assembly_homology,
 kbase/authtest,
-kbase/blobstore,golang:1.12.5-alpine3.9 as build
-kbase/cachingservice,python:3.7-slim
-kbase/catalog,kbase/sdkbase2:python AS build
+kbase/blobstore,golang:1.12.5-alpine3.9 as build,golang:1.12.5-alpine3.9 as build,
+kbase/cachingservice,python:3.7-slim,
+kbase/catalog,kbase/sdkbase2:python AS build,kbase/sdkbase2:python AS build,
 kbase/collectd-docker,
-kbase/condor,centos:7
-kbase/condor-worker,centos:7
+kbase/condor,centos:7,
+kbase/condor-worker,centos:7,
 kbase/condor_flask,
-kbase/data_import_export,kbase/kb_jre:latest as build
+kbase/data_import_export,kbase/kb_jre:latest as build,kbase/kb_jre:latest as build,
 kbase/dataimportexport,
-kbase/db_initialize,kbase/kb_minideb:stretch
+kbase/db_initialize,kbase/kb_minideb:stretch,
 kbase/deplbase,
-kbase/docker-collectd,debian:stable as build
+kbase/docker-collectd,debian:stable as build,debian:stable as build,
 kbase/ee2,
-kbase/errorlogging,kbase/narrative:py3-update as narrative
-kbase/execution_engine2,kbase/sdkbase2:python
-kbase/feeds,kbase/kb_python:python3
-kbase/filebeat,docker.elastic.co/beats/filebeat:5.6.16
+kbase/errorlogging,kbase/narrative:py3-update as narrative,kbase/narrative:py3-update as narrative,
+kbase/execution_engine2,kbase/sdkbase2:python,
+kbase/feeds,kbase/kb_python:python3,
+kbase/filebeat,docker.elastic.co/beats/filebeat:5.6.16,
 kbase/gene_homology,
-kbase/groups,kbase/kb_jre:latest
-kbase/handle_mngr,kbase/kb_perl:latest
-kbase/handle_service,kbase/kb_perl:latest
-kbase/handle_service2,kbase/sdkbase2:python
+kbase/groups,kbase/kb_jre:latest,
+kbase/handle_mngr,kbase/kb_perl:latest,
+kbase/handle_service,kbase/kb_perl:latest,
+kbase/handle_service2,kbase/sdkbase2:python,
 kbase/id_mapper,
 kbase/index_runner2,
-kbase/indexrunner,python:3.7-slim
+kbase/indexrunner,python:3.7-slim,
 kbase/kb-sdk,
 kbase/kb_auth2,
 kbase/kb_awe,
 kbase/kb_ballgown_base,
-kbase/kb_go,bitnami/minideb:jessie
-kbase/kb_jre,jetty:jre8
-kbase/kb_minideb,bitnami/minideb:stretch
+kbase/kb_go,bitnami/minideb:jessie,
+kbase/kb_jre,jetty:jre8,
+kbase/kb_minideb,bitnami/minideb:stretch,
 kbase/kb_njs_wrapper,
-kbase/kb_perl,kbase/kb_perl:frozen
-kbase/kb_python,kbase/kb_minideb:stretch
-kbase/kb_sdk,ubuntu:14.04
+kbase/kb_perl,kbase/kb_perl:frozen,
+kbase/kb_python,kbase/kb_minideb:stretch,
+kbase/kb_sdk,ubuntu:14.04,
 kbase/kb_search,
 kbase/kb_shock,
 kbase/kb_workspace,
 kbase/kbase,
-kbase/kbase-ui,alpine:3.10 as builder
-kbase/kbase_base,kbase/runtime:latest
-kbase/kbaseappcatalogstatic,python:3.7-slim
+kbase/kbase-ui,alpine:3.10 as builder,alpine:3.10 as builder,
+kbase/kbase_base,kbase/runtime:latest,
+kbase/kbaseappcatalogstatic,python:3.7-slim,
 kbase/kbasepythonsdk,
-kbase/logstash,kbase/docker-collectd:latest as collectd
-kbase/metrics,kbase/narrative:latest as narrative
-kbase/narrative,kbase/narrbase:6.1
-kbase/narrative-traefiker,python:3.6-alpine
+kbase/logstash,kbase/docker-collectd:latest as collectd,kbase/docker-collectd:latest as collectd,
+kbase/metrics,kbase/narrative:latest as narrative,kbase/narrative:latest as narrative,
+kbase/narrative,kbase/narrbase:6.1,
+kbase/narrative-traefiker,python:3.6-alpine,
 kbase/narrative_method_stor,
 kbase/narrative_service,
 kbase/narrative_spawner,
@@ -57,26 +57,26 @@ kbase/narrative_version,
 kbase/narrativereaper,
 kbase/narrbase,
 kbase/narrprereq,
-kbase/nginx,openresty/openresty:jessie
-kbase/njs_wrapper,kbase/condor-worker AS build
+kbase/nginx,openresty/openresty:jessie,
+kbase/njs_wrapper,kbase/condor-worker AS build,kbase/condor-worker AS build,
 kbase/proto-ui,
 kbase/react_ui,
-kbase/relation_engine_api,python:3.7-alpine
+kbase/relation_engine_api,python:3.7-alpine,
 kbase/rtmin,
 kbase/runtester,
 kbase/runtime,
-kbase/sdkbase,kbase/kb_perl:latest
-kbase/sdkbase2,kbase/kb_perl:latest
+kbase/sdkbase,kbase/kb_perl:latest,
+kbase/sdkbase2,kbase/kb_perl:latest,
 kbase/search_api,
-kbase/search_api_deluxe,python:3.7-alpine
-kbase/service_wizard,python:2.7-slim
-kbase/staging_service,python:3.6-slim-stretch
+kbase/search_api_deluxe,python:3.7-alpine,
+kbase/service_wizard,python:2.7-slim,
+kbase/staging_service,python:3.6-slim-stretch,
 kbase/traefik_authsvc,
-kbase/ui-assets,nginx:1.17-alpine
+kbase/ui-assets,nginx:1.17-alpine,
 kbase/ui-backend,
 kbase/ujs,
-kbase/user_profile,kbase/kb_jre:latest AS build
-kbase/workspace_deluxe,kbase/sdkbase2 as build
+kbase/user_profile,kbase/kb_jre:latest AS build,kbase/kb_jre:latest AS build,
+kbase/workspace_deluxe,kbase/sdkbase2 as build,kbase/sdkbase2 as build,
 kbase24/website,
 kbaseui/kbase-ui,
 kbaseui/kbase-ui-paydown,

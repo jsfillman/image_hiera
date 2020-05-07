@@ -5,7 +5,7 @@ import time
 
 # Create our results file and add headers
 outfile = open('docker_hiera.csv', 'w')
-outfile.write("Name,Parent\n")
+outfile.write("Name,Parent,Parent2,Parent3,Parent4,\n")
 
 # Open list of repos to check
 with open('docker_images.csv') as master_list:

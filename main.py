@@ -1,17 +1,30 @@
 from urllib.request import urlopen
 import re
-
-# Add portion to open file, and set `current_url` to line in file
-# Then for loop getting `Dockerfile` from each
-# Then write `current_repo
+import time
 
 
-# Will want to make "kbase/auth2" the portion that changes in the for loop
-current_repo = 'https://raw.githubusercontent.com/kbase/auth2/master/Dockerfile'
+# Create our results file and add headers
+outfile = open('docker_hiera.csv', 'w')
+outfile.write("Name,Parent\n")
 
-dockerfile = urlopen(current_repo).read().decode("utf-8")
-results = re.findall(r'FROM.*\n',str(dockerfile))
+# Open list of repos to check
+with open('docker_images.csv') as master_list:
+	repo_list = master_list.read().splitlines()
 
-for _ in results:
-	str(_)
-	print(_[5:-1])
+# Iterate through list of repos and find parent images (only does one level atm)
+for repo in repo_list:
+	repo = repo.rstrip()
+	outfile.write(repo)
+	outfile.write(",")
+	# outfile.write(repo)
+	current_url = "https://raw.githubusercontent.com/{}/master/Dockerfile".format(repo)
+	try:
+		dockerfile = urlopen(current_url).read().decode("utf-8")
+		results = re.findall(r'FROM.*\n',str(dockerfile))
+		outfile.write(results[0][5:-1])
+		outfile.write("\n")
+		# outfile.write(results[5:-1])
+	except:
+		outfile.write("\n")
+	# Pause for 1 second to avoid hitting GitHub read limits
+	time.sleep(1)
